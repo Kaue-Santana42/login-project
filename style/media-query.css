@@ -14,7 +14,8 @@ TV: Above 1280px
     --secondary-color: black;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) { 
+    /* Tablet settings */
 
     body {
         background-image: linear-gradient(to top, var(--primary-color), var(--secondary-color));
@@ -22,6 +23,7 @@ TV: Above 1280px
 
     section#login {
         width: 80vw;
+        height: 300px;
     }
 
     section#login div#image {
@@ -35,9 +37,14 @@ TV: Above 1280px
         float: right;
         width: 70%;
     }
+
+    div#form p {
+        margin: 20px 0px;
+    }
 }
 
 @media screen and (min-width:1024px) {
+    /* Desktop settings */
 
     body {
         background-image: linear-gradient(to top, var(--primary-color), var(--secondary-color));
@@ -45,6 +52,7 @@ TV: Above 1280px
 
     section#login {
         width: 950px;
+        height: 350px;
     }
 
     section#login div#image {
@@ -64,6 +72,7 @@ TV: Above 1280px
     }
 
     div#form p {
-    font-size: 1.2em;
-}
+        font-size: 1em;
+        margin: 20px 0px;
+    }
 }
